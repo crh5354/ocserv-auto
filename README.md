@@ -38,3 +38,5 @@ cd ocserv-auto
 chmod +x ocserv-auto.sh
 sh ./ocserv-auto.sh
 ```
+
+* 最后按提示输入

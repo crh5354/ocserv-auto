@@ -2,9 +2,8 @@
 ####################################################
 #                                                  #
 # This is a ocserv installation for CentOS 7       #
-# Version: 0.1.2 2017-02-03
-# Author: Travis Lee                               #
-# Website: https://www.stunnel.info                #
+# Version: 0.1.0 2019-02-27
+# Author: Crh                                      #
 #                                                  #
 ####################################################
 
