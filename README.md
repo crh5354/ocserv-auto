@@ -5,8 +5,12 @@ Auto Install Ocserv Server for CentOS&RedHat 7
 支持自动判断 firewalld 和 iptables，安装前请确保其中之一在运行。
 
 * 支持自动判断防火墙，请确保 Firewalld 或者 iptables 其中一个是 active 状态；
+* 可在CentOS 7系统终端执行如下命令查看状态
+```bash
+systemctl status firewalld
+```
 * 默认采用用户名密码验证；
-* 默认配置文件在 /etc/ocserv/ 目录；
+* 默认配置文件在 /etc/ocserv/ 目录下的ocserv.conf文件；
 * 安装时会提示你输入端口、用户名、密码等信息，也可直接回车采用默认值，密码是随机生成的；
 * 安装脚本会关闭 SELINUX；
 * 尚未自带路由表，所以现在所有链接都是走VPN；如果你有需要添加的路由表可自行添加，最多支持 200 条，添加了在路由表里的 IP 才会走 VPN，；
@@ -39,4 +43,9 @@ chmod +x ocserv-auto.sh
 sh ./ocserv-auto.sh
 ```
 
-* 最后按提示输入
+* 最后按提示输入完成
+
+* 如果需要添加多个用户，每执行一次添加一个用户，username是用户账号（自行修改）
+```bash
+ocpasswd -c /etc/ocserv/ocpasswd username
+```
