@@ -33,6 +33,7 @@ yum update nss curl
 * 安装组件
 ```bash
 yum install NetworkManager git epel-release
+yum install net-tools
 ```
 
 * 拉取并执行脚本
